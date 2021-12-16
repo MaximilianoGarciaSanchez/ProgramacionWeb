@@ -42,7 +42,7 @@
 
             <div class=mb-3>
                 <label for="comments" class="form-label">Comentarios</label>
-                <textarea name="comments" cols="30" rows="4" class="form-control">value="{{ old('comments') ?? @$client->comments}}"</textarea>
+                <textarea name="comments" cols="30" rows="4" class="form-control" placeholder="Comentarios" value="{{ old('comments') ?? @$client->comments}}"></textarea>
                 <p class="form-text">Escriba un comentario</p>
                 @error('comments')
                 <p class="form-text text-danger">{{ $message }}</p>
